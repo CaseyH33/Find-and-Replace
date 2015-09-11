@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Find and Replace</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Find and Replace</h1>
+      <h4>Enter a string, the word you'd like to replace, and the word you'd like to replace it with.</h4>
+
+      <form id="find_replace">
+        <div class="form-group">
+          <label for="input_string">String:</label>
+          <input id="input_string" type="text" placeholder="Hello world">
+        </div>
+        <div class="form-group">
+          <label for="find_word">Word you'd like to replace:</label>
+          <input id="find_word" type="text" placeholder="world">
+        </div>
+        <div class="form-group">
+          <label for="change_word">Replacement word:</label>
+          <input id="change_word" type="text" placeholder="universe">
+        </div>
+
+        <button type="submit" class="btn">Go!</button>
+      </form>
+
+      <div id="result">
+         <br>
+        <p>Here is your new string:</p>
+        <p><span class="output"></span></p>
+      </div>
+    </div>
+  </body>
+</html>
